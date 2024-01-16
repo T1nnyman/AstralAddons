@@ -1,0 +1,75 @@
+bosses:
+  anubis:
+    display_name: '§e§lAnubis'
+    skull_texture: 'https://textures.minecraft.net/texture/fa1942eaab34ace9158823bafb3e8a925ff5d8eef78e7165d8321976c4fb1ac1'
+    mythic_id: 'lr_anubis'
+  astralarchon:
+    display_name: '§b§lAstral Archon'
+    skull_texture: 'https://textures.minecraft.net/texture/24d4564c2b1a10299b67268cca3a761640ede7f97285592c92a50f31ecc5a15'
+    mythic_id: 'astral_archon'
+  azriel:
+    display_name: '§3§lAzriel'
+    skull_texture: 'https://textures.minecraft.net/texture/7d2fab0197fbd22fd86a4a638c50122cefb768a2c62c2511c2ce6c9cde6909a5'
+    mythic_id: 'azriel'
+  cerberus:
+    display_name: '§4§lCerberus'
+    skull_texture: 'https://textures.minecraft.net/texture/b7c8bef6beb77e29af8627ecdc38d86aa2fea7ccd163dc73c00f9f258f9a1457'
+    mythic_id: 'cerberus'
+  corruptedgolemking:
+    display_name: '§5§lCorrupted Golem King'
+    skull_texture: 'https://textures.minecraft.net/texture/f7c886ee9b04e85b2fb0f26740c100caba9a817bf1d09aa4ed5449536135cc90'
+    mythic_id: 'CORRUPTED_GOLEM_KING'
+  etherealreaver:
+    display_name: '§5§lEthereal Reaver'
+    skull_texture: 'https://textures.minecraft.net/texture/99e01b3a35ae3be4483b6df69b7070bd6dc75b399d7e2ebbc7b8840332f7b3a0'
+    mythic_id: 'ethereal_reaver'
+  kindletron3:
+    display_name: '§6§lKindletron 3'
+    skull_texture: 'https://textures.minecraft.net/texture/f4e4442913cff4fad8ab45800a90d98779aec09048e84f2069f0057262da1f92'
+    mythic_id: 'kindletron_2'
+  koboldassassin:
+    display_name: '§a§lKobold Assassin'
+    skull_texture: 'https://textures.minecraft.net/texture/2638583cf2c761fac3f83982589ac26ee5771a183863b47a2490e4cb506ad26'
+    mythic_id: 'koboldassassin'
+  kriger:
+    display_name: '§2§lKriger'
+    skull_texture: 'https://textures.minecraft.net/texture/324032c89952f4b549cb65f1949e7483e77ee82670e6e7c1e000d463572bb49'
+    mythic_id: 'kriger'
+  kurrot:
+    display_name: '§a§lKur & Rot'
+    skull_texture: 'https://textures.minecraft.net/texture/172850906b7f0d952c0e508073cc439fd3374ccf5b889c06f7e8d90cc0cc255c'
+    mythic_id: 'KUR_ROT'
+  magnus:
+    display_name: '§7§lMagnus'
+    skull_texture: 'https://textures.minecraft.net/texture/4a977109b82fe17527bd7191b3b5ea52fea30bf567d1097ca47a9b6b2caa1dda'
+    mythic_id: 'magnus'
+  medusa:
+    display_name: '§2§lMedusa'
+    skull_texture: 'https://textures.minecraft.net/texture/65e944b1190c04e2fccd89ded97f82e113a66f6b232884fff53fb5de6751ed63'
+    mythic_id: 'medusa'
+  minotaur:
+    display_name: '§c§lMinotaur'
+    skull_texture: 'https://textures.minecraft.net/texture/8ca0cb6159d2350d720a2bc209a295492f380c7fe776391b28414ae229589'
+    mythic_id: 'lr_minotaur'
+  oog:
+    display_name: '§b§lOog'
+    skull_texture: 'https://textures.minecraft.net/texture/3d25e5008a3a1dfb4f83045c4919d82d18e97a0857f50418c6d86c63d68'
+    mythic_id: 'oog'
+  santa:
+    display_name: '§c§lSanta'
+    skull_texture: 'https://textures.minecraft.net/texture/2c6d9c34146c0edd71ac232407988607e2940b6eb2cccccdfe0eae08dd32573d'
+    mythic_id: 'lr_santa_boss'
+  yeti:
+    display_name: '§f§lYeti'
+    skull_texture: 'https://textures.minecraft.net/texture/4a089fb5c736f7f288a61c6e81601b5b13c2b945006ee9bab62306cb19df7d07'
+    mythic_id: 'lr_yeti'
+  yukio:
+    display_name: '§b§lYukio'
+    skull_texture: 'https://textures.minecraft.net/texture/ca60fcbb5e17b91d5212e3916a7a099fca7efee42ff8b402bb443ed3e93e05b2'
+    mythic_id: 'YUKIO'
+  wizpiglin2:
+    display_name: '§5§lWizpiglin 2'
+    skull_texture: 'https://textures.minecraft.net/texture/c204a0f1ed6f9773098a392a63da45d73b19a6947bba7b5979045bcb6b53b2ce'
+    mythic_id: 'wizpiglin_2'
+
+

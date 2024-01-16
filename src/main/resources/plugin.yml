@@ -1,0 +1,14 @@
+name: AstralAddons
+version: 0.1.0
+main: com.tinnyman.astralwarsaddons.AstralAddons
+api-version: 1.20
+authors: [ Tinnyman ]
+website: www.astralwars.net
+
+commands:
+  astraladdons:
+    description: "Astral Addons Info Command"
+    usage: "§c/astraladdons <args> §f- [§eadmin, info, reload§f]"
+    aliases: [ aa ]
+    permission: astraladdons.command.info
+    permission-message: "§cYou do not have permission to use this command."
