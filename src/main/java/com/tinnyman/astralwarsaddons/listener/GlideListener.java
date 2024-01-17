@@ -4,6 +4,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityToggleGlideEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
@@ -37,12 +38,23 @@ public class GlideListener implements Listener {
         if (glidingPlayers.contains(event.getPlayer().getUniqueId())) {
             // Check if the player Right-Clicked with an empty hand
             if (event.getAction() == Action.LEFT_CLICK_AIR) {
-                // Check if the player is midair
-                if (event.getPlayer().getLocation().getBlock().getType().isAir()) {
+                // Check if the player is midair and not standing on a solid block
+                if (event.getPlayer().getLocation().getBlock().getType().isAir() && !event.getPlayer().getLocation().subtract(0, 1, 0).getBlock().getType().isSolid()) {
                     event.getPlayer().setGliding(true); // Set the player to gliding
                     // Give the player a boost in the direction they are looking
                     event.getPlayer().setVelocity(event.getPlayer().getLocation().getDirection().multiply(2));
                 }
+            }
+        }
+    }
+
+    @EventHandler
+    public void onPlayerFallDamage(EntityDamageEvent event) {
+        if (event.getEntity() instanceof Player && (event.getCause() == EntityDamageEvent.DamageCause.FALL
+                                        || event.getCause() == EntityDamageEvent.DamageCause.FLY_INTO_WALL)) {
+            // Check if the player is in the list of gliding players
+            if (glidingPlayers.contains(event.getEntity().getUniqueId())) {
+                event.setCancelled(true); // Cancel the fall damage
             }
         }
     }
