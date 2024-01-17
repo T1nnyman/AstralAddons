@@ -2,6 +2,7 @@ package com.tinnyman.astralwarsaddons.command;
 
 import com.tinnyman.astralwarsaddons.gui.AdminGUI;
 import com.tinnyman.astralwarsaddons.gui.BossManagementGUI;
+import com.tinnyman.astralwarsaddons.listener.GlideListener;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -9,6 +10,11 @@ import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 
 public class AstralAddonsCommand implements CommandExecutor, TabExecutor {
+    private final GlideListener glideListener;
+
+    public AstralAddonsCommand(GlideListener glideListener) {
+        this.glideListener = glideListener;
+    }
 
     @Override
     public boolean onCommand(CommandSender sender, Command command,String label, String[] args) {
@@ -31,6 +37,8 @@ public class AstralAddonsCommand implements CommandExecutor, TabExecutor {
 
             // Open the admin menu
             new AdminGUI(player).open();
+        } else if (args.length > 0 && args[0].equalsIgnoreCase("glide")) {
+            glideListener.toggleGlide(player);
         }
 
         return false;
